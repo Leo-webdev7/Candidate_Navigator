@@ -56,17 +56,18 @@ const CandidateSearch: React.FC = () => {
       ) : noMoreCandidates ? (
         <p>No more candidates available</p>
       ) : currentCandidate ? (
-        <div>
-          <img src={currentCandidate.avatar_url} alt={`avatar`} width="100" height="100" />
-          <h2>{currentCandidate.name || currentCandidate.login}</h2>
+        <div className='candidateDiv'>
+          <img className='candidateSearchImg' src={currentCandidate.avatar_url} alt={`avatar`} width="100" height="100"/>
+          <h2>Name: {currentCandidate.name || 'N/A'}</h2>
           <p>Username: {currentCandidate.login}</p>
           <p>Location: {currentCandidate.location || 'N/A'}</p>
           <p>Email: {currentCandidate.email || 'N/A'}</p>
           <p>Company: {currentCandidate.company || 'N/A'}</p>
+          <p>Bio: {currentCandidate.bio || 'N/A'}</p>
           <a href={currentCandidate.html_url} target="_blank" rel="noopener noreferrer">View Profile</a>
-          <div>
-            <button onClick={handleSaveCandidate}>+</button>
-            <button onClick={handleSkipCandidate}>-</button>
+          <div className='candidateButtons'>
+            <button className='candidateButton' onClick={handleSaveCandidate}>+</button>
+            <button className='candidateButton' onClick={handleSkipCandidate}>-</button>
           </div>
         </div>
       ) : (

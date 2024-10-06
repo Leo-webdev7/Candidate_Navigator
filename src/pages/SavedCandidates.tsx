@@ -62,6 +62,7 @@ const handleAccept = (id: any) => {
     // Your logic to handle accepting a candidate
     console.log('Accepted candidate with id:', id);
     // Update the state or call a function to update the status of the candidate
+  
   };
 
   const handleReject = (id: any) => {

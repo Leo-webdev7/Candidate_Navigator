@@ -87,7 +87,7 @@ main {
 tr {
   border-radius: 10px;
   background-color: #000;
-  color: white;
+  color: rgb(252, 252, 252);
 }
 
 tbody tr:nth-child(odd) {
@@ -120,3 +120,29 @@ tbody tr:nth-child(odd) {
 }
 
 
+th, td {
+  padding: 15px;
+}
+
+.candidateDiv {
+  margin: 0 auto;
+  background-color: black;
+  width: 60%;
+  height: 50%;
+}
+
+.candidateSearchImg {
+  width: 100%;
+  height: 100%;
+}
+
+.candidateButtons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.candidateButton {
+  margin: 20px;
+  width: 100%;
+}
