@@ -12,6 +12,7 @@ const searchGithub = async () => {
     );
     // console.log('Response:', response);
     const data = await response.json();
+    console.log(`log for token ${import.meta.env.VITE_GITHUB_TOKEN}`);
     if (!response.ok) {
       throw new Error('invalid API response, check the network tab');
     }
@@ -34,6 +35,7 @@ const searchGithubUser = async (username: string) => {
     if (!response.ok) {
       throw new Error('invalid API response, check the network tab');
     }
+    console.log(`data log ${JSON.stringify(data)}`)
     return data;
   } catch (err) {
     // console.log('an error occurred', err);
