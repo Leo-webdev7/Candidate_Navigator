@@ -2,7 +2,7 @@
 // Interface for GitHub user profile
 export interface Candidate {
   login: string;
-  id: number;
+  id: string;
   avatar_url: string;
   url: string;
   html_url: string;
@@ -15,7 +15,7 @@ export interface Candidate {
   location?: string;
   email?: string;
   bio?: string;
-  status?:boolean | string;
+  status?: 'accepted' | 'rejected';
   public_repos: number;
   public_gists: number;
   followers: number;
