@@ -55,7 +55,9 @@ The Candidate Navigator Application allows users to search for potential candida
 
 ## Installation
 
-1. Clone repo 2.npm i 3. npm run start
+1. Clone repo
+2. npm i
+3. npm run start
 
 ## Usage Information
 
