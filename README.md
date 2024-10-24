@@ -81,7 +81,9 @@ npm test
 
 ## Screenshots
 
+![2024-10-24_134349](https://github.com/user-attachments/assets/957f08cf-2014-4a30-ad0a-9655679c473f)
 
+![2024-10-24_134416](https://github.com/user-attachments/assets/7a614ab9-8da3-41ed-ab86-22693cfdd919)
 
 ## Links
 
